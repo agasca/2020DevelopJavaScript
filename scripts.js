@@ -1,1 +1,2 @@
-alert("hola");
+let nombre = 'Amigos.'
+alert("Hola " + nombre)
