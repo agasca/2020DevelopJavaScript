@@ -99,3 +99,65 @@ c(numbers2.concat(7,17,27))
 //.join convierte numero a cadena con delimitador
 c(numbers.join('|'))
 
+let inicio = Date.now()
+c(inicio.toString())
+let  today = new Date()
+c(today.toISOString())
+
+
+let fecha = new Date(Date.now())    //https://www.geeksforgeeks.org/javascript-date-now/
+c(fecha.toString())
+c(fecha
+    .toString()
+    .slice(0,10).replace(/-/g,"")
+ )
+
+ c(fecha
+    .toString()
+    .slice(16,24)
+ )
+//Wed Feb 26 2020 12:36:48 GMT-0600 (hora estándar central)
+//alberto gasca bernal
+let nombre = "alberto"
+let apellido = "gasca"
+
+let r = Math.random().toString(36).substring(7) //36 es la base, 2 es binario, 16 es hexa
+c(r)
+c(nombre, r);
+r = Math.random().toString(36).substring(7)
+c(r)
+c(apellido, r);
+
+
+
+//
+//funcion
+let nomApe = (cadena) => {
+   this.data = cadena
+   this.min = 0
+   this.max =  this.data.length
+   this.posData =  Math.random() * (this.max - this.min) + this.min 
+   c("posData:"+posData)
+   return this.data.substr(this.posData,1)
+}
+
+c("RES:"+nomApe(nombre))
+c("RES:"+nomApe(apellido))
+
+let token = (n, a) => {
+   //c("dentro de la funcion")
+   this.nombre = n
+   this.apellido = a
+   this.fechaToken = new Date(Date.now())   
+   this.r = Math.random().toString(36).substring(7) //36 es la base, 2 es binario, 16 es hexa
+   this.resultado = ""
+   this.resultado= (this.nombre + 
+   this.apellido + 
+   this.fechaToken.toString().slice(16,24) + 
+   this.r)
+
+   return resultado
+}
+
+c(token(nomApe(nombre), nomApe(apellido)))
+c("fin")

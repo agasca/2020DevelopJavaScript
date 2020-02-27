@@ -84,7 +84,7 @@ let div = `
         <p>replace(original, replacement)</p>
         <p>'hola mundo'replace('mundo', 'amigo')</p>
         <p>se puede utilizar numeros negativos en los siguientes</p>
-        <p>split(serpataor[,quantity])</p>
+        <p>split(separator[,quantity])</p>
         <p>substring(start[,end]) //no incluye el end</p>
         <p>substr(start[,quantity])</p>
         <p>slice(start[,end])</p>
